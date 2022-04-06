@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DBE3210D-9D45-44DC-B0A0-EA01FEABC003}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CalendarmaterialStyle\CalendarMaterialStyle.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CalendarMaterialStyle">
+        <MSBuild Projects="CalendarmaterialStyle\CalendarMaterialStyle.dproj"/>
+    </Target>
+    <Target Name="CalendarMaterialStyle:Clean">
+        <MSBuild Projects="CalendarmaterialStyle\CalendarMaterialStyle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalendarMaterialStyle:Make">
+        <MSBuild Projects="CalendarmaterialStyle\CalendarMaterialStyle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CalendarMaterialStyle"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CalendarMaterialStyle:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CalendarMaterialStyle:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
