@@ -1,0 +1,263 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 760
+  ClientWidth = 1112
+  Fill.Color = xFF131312
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Center
+    Size.Width = 401.000000000000000000
+    Size.Height = 307.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Ellipse1: TEllipse
+      Align = Center
+      Fill.Color = claBlack
+      Margins.Top = 340.000000000000000000
+      Size.Width = 283.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Ellipse4: TEllipse
+        Align = Center
+        Fill.Color = x6E7B7B7B
+        Margins.Top = -450.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 67.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+    object Circle1: TCircle
+      Align = Center
+      Fill.Color = x32FFFFFF
+      Size.Width = 301.000000000000000000
+      Size.Height = 305.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Ellipse3: TEllipse
+        Fill.Color = xFF323232
+        Position.X = 83.000000000000000000
+        Position.Y = -5.000000000000000000
+        Size.Width = 138.000000000000000000
+        Size.Height = 52.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF383737
+        Stroke.Thickness = 10.000000000000000000
+      end
+      object FloatAnimation1: TFloatAnimation
+        AutoReverse = True
+        Enabled = True
+        Duration = 2.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = -20.000000000000000000
+        StopValue = 20.000000000000000000
+      end
+      object Ellipse2: TEllipse
+        Fill.Kind = None
+        Position.X = 82.000000000000000000
+        Position.Y = -6.000000000000000000
+        Size.Width = 138.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF6A6A6A
+        Stroke.Thickness = 10.000000000000000000
+      end
+    end
+    object FloatAnimation2: TFloatAnimation
+      AutoReverse = True
+      Enabled = True
+      Duration = 2.000000000000000000
+      Loop = True
+      PropertyName = 'Margins.Left'
+      StartValue = -30.000000000000000000
+      StopValue = 30.000000000000000000
+    end
+    object Layout2: TLayout
+      Align = Center
+      Size.Width = 274.000000000000000000
+      Size.Height = 304.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object GlowEffect1: TGlowEffect
+        Softness = 9.000000000000000000
+        GlowColor = claLime
+        Opacity = 0.899999976158142100
+        object ColorKeyAnimation3: TColorKeyAnimation
+          AutoReverse = True
+          Enabled = True
+          Duration = 5.000000000000000000
+          Keys = <
+            item
+              Value = claRed
+            end
+            item
+              Key = 0.200000002980232200
+              Value = claYellow
+            end
+            item
+              Key = 0.400000005960464500
+              Value = xFF00FF1A
+            end
+            item
+              Key = 0.600000023841857900
+              Value = xFF00EEF6
+            end
+            item
+              Key = 0.800000011920929000
+              Value = xFF4335FF
+            end
+            item
+              Key = 1.000000000000000000
+              Value = xFFF600E5
+            end>
+          Loop = True
+          PropertyName = 'GlowColor'
+          StartFromCurrent = False
+        end
+      end
+      object FloatAnimation3: TFloatAnimation
+        AutoReverse = True
+        Enabled = True
+        Duration = 2.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = 2.000000000000000000
+        StopValue = -2.000000000000000000
+      end
+      object FloatAnimation4: TFloatAnimation
+        AutoReverse = True
+        Duration = 2.000000000000000000
+        Loop = True
+        PropertyName = 'Margins.Left'
+        StartValue = -6.000000000000000000
+        StopValue = 6.000000000000000000
+      end
+      object Layout4: TLayout
+        Align = Contents
+        Size.Width = 274.000000000000000000
+        Size.Height = 304.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Ellipse6: TEllipse
+          Fill.Color = xFF06FF28
+          Position.Y = 133.000000000000000000
+          Size.Width = 274.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object ColorKeyAnimation2: TColorKeyAnimation
+            AutoReverse = True
+            Enabled = True
+            Duration = 5.000000000000000000
+            Keys = <
+              item
+                Value = claRed
+              end
+              item
+                Key = 0.200000002980232200
+                Value = claYellow
+              end
+              item
+                Key = 0.400000005960464500
+                Value = xFF00FF1A
+              end
+              item
+                Key = 0.600000023841857900
+                Value = xFF00EEF6
+              end
+              item
+                Key = 0.800000011920929000
+                Value = xFF4335FF
+              end
+              item
+                Key = 1.000000000000000000
+                Value = xFFF600E5
+              end>
+            Loop = True
+            PropertyName = 'Fill.Color'
+            StartFromCurrent = False
+          end
+        end
+        object Layout3: TLayout
+          Align = Bottom
+          ClipChildren = True
+          Position.Y = 144.000000000000000000
+          Size.Width = 274.000000000000000000
+          Size.Height = 160.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Ellipse5: TEllipse
+            Align = Center
+            Fill.Color = xFF06FF28
+            Margins.Top = -170.000000000000000000
+            Size.Width = 273.000000000000000000
+            Size.Height = 290.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object ColorKeyAnimation1: TColorKeyAnimation
+              AutoReverse = True
+              Enabled = True
+              Duration = 5.000000000000000000
+              Keys = <
+                item
+                  Value = claRed
+                end
+                item
+                  Key = 0.200000002980232200
+                  Value = claYellow
+                end
+                item
+                  Key = 0.400000005960464500
+                  Value = xFF00FF1A
+                end
+                item
+                  Key = 0.600000023841857900
+                  Value = xFF00EEF6
+                end
+                item
+                  Key = 0.800000011920929000
+                  Value = xFF4335FF
+                end
+                item
+                  Key = 1.000000000000000000
+                  Value = xFFF600E5
+                end>
+              Loop = True
+              PropertyName = 'Fill.Color'
+              StartFromCurrent = False
+            end
+          end
+        end
+      end
+      object Ellipse7: TEllipse
+        Fill.Color = x53000000
+        Position.Y = 133.000000000000000000
+        Size.Width = 274.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object WaveEffect1: TWaveEffect
+          Enabled = False
+          Time = 2048.000000000000000000
+          WaveSize = 32.000000000000000000
+          object FloatAnimation5: TFloatAnimation
+            Enabled = True
+            Duration = 10000.000000000000000000
+            Loop = True
+            PropertyName = 'Time'
+            StartValue = 0.000000000000000000
+            StopValue = 2048.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end
