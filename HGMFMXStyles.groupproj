@@ -6,6 +6,9 @@
         <Projects Include="CalendarmaterialStyle\CalendarMaterialStyle.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="AnalogClockStyle\Project9.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -23,14 +26,23 @@
     <Target Name="CalendarMaterialStyle:Make">
         <MSBuild Projects="CalendarmaterialStyle\CalendarMaterialStyle.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Project9">
+        <MSBuild Projects="AnalogClockStyle\Project9.dproj"/>
+    </Target>
+    <Target Name="Project9:Clean">
+        <MSBuild Projects="AnalogClockStyle\Project9.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project9:Make">
+        <MSBuild Projects="AnalogClockStyle\Project9.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="CalendarMaterialStyle"/>
+        <CallTarget Targets="CalendarMaterialStyle;Project9"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="CalendarMaterialStyle:Clean"/>
+        <CallTarget Targets="CalendarMaterialStyle:Clean;Project9:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="CalendarMaterialStyle:Make"/>
+        <CallTarget Targets="CalendarMaterialStyle:Make;Project9:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
